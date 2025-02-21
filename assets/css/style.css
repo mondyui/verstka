@@ -1,0 +1,604 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: 0.5s;
+    font-family: 'MontserratAlternates';
+}
+
+/* подключение шрифта */
+@font-face {
+    font-family: 'MontserratAlternates';
+    src: url('../media/fonts/Montserrat_Alternates/MontserratAlternates-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'MontserratAlternate-Bold';
+    src: url('../media/fonts/Montserrat_Alternates/MontserratAlternates-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'MontserratAlternates-Italic';
+    src: url('../media/fonts/Montserrat_Alternates/MontserratAlternates-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'MontserratAlternates-Light';
+    src: url('../media/fonts/Montserrat_Alternates/MontserratAlternates-Light.ttf');
+}
+
+/* подключение шрифта */
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.mt140 {
+    margin-top: 140px;
+}
+
+body {
+    background-color: #F4EEE9;
+}
+
+.btn {
+    width: 255px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(72%, 65%, 66%, 40%);
+    font-size: 18px;
+    color: #373636;
+    border: 1px solid rgb(72%, 65%, 66%, 40%);
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.btn:hover {
+    background-color: transparent;
+    border: 1px solid #000;
+}
+
+.btn_reg {
+    width: 255px;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    font-size: 14px;
+    color: #373636;
+    border: 1px solid #000;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.btn_reg:hover {
+    box-shadow: 0 0 10px #9b8083;
+}
+
+h1 {
+    font-size: 60px;
+    font-family: 'MontserratAlternates-Light';
+}
+
+h2 {
+    font-size: 36px;
+    font-family: 'MontserratAlternates-Light';
+}
+
+/* шапка начало */
+header {
+    padding: 15px 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: #F4EEE9;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.person img {
+    width: 30px;
+}
+
+.person img:hover {
+    transform: scale(1.1);
+}
+
+nav {
+    display: flex;
+    gap: 22px;
+}
+
+nav a {
+    font-size: 18px;
+    color: #000;
+}
+
+nav a:hover {
+    color: #B7A7A9;
+}
+
+/* шапка конец */
+
+/* баннер начало */
+section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    padding-top: 150px;
+}
+
+.banner_text {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 70px 0;
+}
+
+.banner_text p {
+    font-size: 20px;
+}
+
+.banner_foto {
+    display: flex;
+    justify-content: space-between;
+    gap: 26px;
+}
+
+
+.bf_1 {
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+}
+
+/* баннер конец */
+
+/* о нас начало */
+.o_nas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.o_nas img {
+    width: 598px;
+    border-radius: 56px 0 0 56px;
+}
+
+.on_text {
+    width: 520px;
+    height: 458px;
+    background-color: rgb(72%, 65%, 66%, 40%);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 70px 40px 0 40px;
+    border-radius: 0 56px 56px 0;
+}
+
+/* о нас конец */
+
+/* преимущества начало */
+.prem {
+    background-color: rgb(72%, 65%, 66%, 40%);
+    text-align: center;
+    padding: 50px 0;
+}
+
+.prem_item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
+.prem img {
+    width: 100px;
+}
+
+.prem_card {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.prem_card:hover {
+    transform: translateY(-4px);
+}
+
+/* преимущества конец */
+
+/* услуги начало */
+.catalog {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.catalog p {
+    color: #fff;
+    font-size: 32px;
+    font-family: 'MontserratAlternates-Light';
+    text-align: center;
+}
+
+.catalog_item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card1 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.card2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.catalog_card:hover {
+    box-shadow: 0 0 50px #9b8083;
+}
+
+.c1 {
+    width: 524px;
+    height: 540px;
+    background-image: url('../media/image/catalog/1.png.');
+}
+
+.c2 {
+    width: 623px;
+    height: 251px;
+    background-image: url('../media/image/catalog/2.png.');
+}
+
+.c3 {
+    width: 289px;
+    height: 259px;
+    background-image: url('../media/image/catalog/3.png.');
+}
+
+.c4 {
+    width: 289px;
+    height: 259px;
+    background-image: url('../media/image/catalog/4.png.');
+}
+
+.cb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* услуги конец */
+
+/* акции начало */
+.sale_item {
+    margin-top: 40px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sale_card {
+    text-align: center;
+    font-size: 20px;
+}
+
+.sale_card p {
+    width: 337px;
+    padding-top: 7px;
+}
+
+.ps {
+    font-size: 14px;
+    margin-top: 45px;
+}
+
+/* акции конец */
+
+/* футер начало */
+footer {
+    background-color: rgb(72%, 65%, 66%, 40%);
+    border-radius: 56px 56px 0 0;
+    font-size: 14px;
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_left {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.footer_contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer_right {
+    margin-top: 25px;
+}
+
+.fc_card {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.fr {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+}
+
+.fr img {
+    width: 30px;
+}
+
+footer nav {
+    display: flex;
+    gap: 22px;
+    margin-top: 55px;
+    flex-direction: column;
+    text-align: right;
+}
+
+footer nav a {
+    font-size: 16px;
+    color: #000;
+}
+
+footer nav a:hover {
+    color: #B7A7A9;
+}
+
+.coop {
+    color: #000;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* футер конец */
+
+/* форма начало */
+.reg_container {
+    display: flex;
+    justify-content: center;
+}
+
+.reg_container .reg {
+    margin-top: 110px;
+}
+
+.reg {
+    background-color: #fff;
+    border-radius: 56px;
+    height: 558px;
+    width: 576px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.reg img {
+    width: 188px;
+}
+
+.reg_title img {
+    width: 456px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+form input {
+    width: 90%;
+    border: none;
+    outline: none;
+    border: transparent;
+    padding: 7px;
+    border-bottom: 2px solid #817c7c;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    appearance: none;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.checkbox-block {
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-block a {
+    color: rgba(0, 0, 0, 0.325);
+    font-size: 12px;
+}
+
+.vhod {
+    font-size: 14px;
+    color: #817c7c;
+    margin-top: 10px;
+}
+
+.vhod span {
+    text-decoration: underline;
+}
+
+/* форма конец */
+
+/* каталог полный начало */
+.catalog_full {
+    padding-top: 130px;
+}
+
+.catalog_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.catalog_title img {
+    width: 174px;
+    border-radius: 50px;
+}
+
+.catalog_c {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card {
+    width: 583px;
+    background-color: rgb(72%, 65%, 66%, 40%);
+    border-radius: 56px;
+}
+
+.catalog_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding: 25px;
+}
+
+.catalog_info .btn_reg {
+    width: 187px;
+    font-size: 20px;
+}
+
+/* каталог полный конец */
+
+/* услуга начало */
+.usluga {
+    padding-top: 100px;
+}
+
+.usluga_card {
+    padding-top: 40px;
+}
+
+.us_img {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 41px;
+}
+
+.usi {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+
+.usluga_card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.usluga_text {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.usluga_text p {
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 2em;
+}
+/* услуга конец */
+
+/* мастер начало */
+.master {
+    padding-top: 100px;
+}
+
+.master_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.master_slide {
+    display: flex;
+    gap: 20px;
+}
+
+.master_card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 70px;
+}
+
+.master_text{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 46px;
+}
+
+.master_text p {
+    font-size: 22px;
+}
+
+.master_text p span {
+    font-style: italic;
+}
+
+.master_text h3 {
+    font-size: 30px;
+}
+/* мастер конец */
